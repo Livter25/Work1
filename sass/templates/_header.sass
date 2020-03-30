@@ -1,0 +1,58 @@
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 99
+    background: transparent
+.menu
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+    color: $dark
+    &__content
+        display: flex
+        align-items: center
+        &__phone
+            text-decoration: none
+            color: $dark
+            font-size: 1.18rem
+            font-weight: normal
+            margin: 0 46px 0 44px
+            transition: all 0.5s
+            &:hover
+                text-decoration: underline solid $primary
+                color: $primary
+
+.logo
+    display: flex
+    align-items: center
+    &__text
+        font-family: 'Ubuntu', sans-serif
+        font-weight: bold
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 1.55rem
+        margin-left: 10px
+        color: $dark
+.nav
+    display: flex
+    
+    &__item
+        margin-left: 25px
+        text-transform: uppercase
+        text-decoration: none
+        font-family: 'Ubuntu', sans-serif
+        font-weight: 300 
+        color: $dark
+        font-size: 1rem 
+        padding: 10px 0
+        border-bottom: 2px solid transparent
+        cursor: pointer
+        transition: all 0.5s
+        &:hover
+            border-bottom: 2px solid $primary
+                
+    
+

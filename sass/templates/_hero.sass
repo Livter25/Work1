@@ -1,0 +1,53 @@
+.hero
+    width: 94.3%
+    height: 1133px
+    display: flex
+    background: url('../img/hero/bg_j.jpg') no-repeat center 
+    &__primary
+        color: $primary
+    &__content
+        width: 90%
+        padding-left: 13%
+        &__button
+            width: 219px
+            height: 49px
+            margin-top: 20px
+        &__text
+            width: 42%
+            font-size: 1.2rem
+            font-weight: 300
+            color: $dark
+            text-align: left
+        
+
+        &__title
+            margin-top: 30%
+            font-family: 'Ubuntu', sans-serif
+            font-size: 3.1rem
+            font-weight: bold
+
+    &__contact
+        position: relative
+        width: 10%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+        padding-bottom: 10%
+        margin-left: -2%
+        transition: all 0.5s
+        &:hover
+            background-color: rgba($dark, 0.2)
+        &::before
+            content: ''
+            position: absolute
+            bottom: 55%
+            left: -82%
+            height: 2px
+            width: 461px
+            transform: rotate(90deg)
+            background: $primary
+
+        &__a
+            margin-bottom: 29px
+            margin-left: 20%
