@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header " data-toggle="header">
         <div class="container">
             <div class="menu">
                 <div class=" logo menu__logo">
@@ -42,7 +42,7 @@
                 <button class="button hero__content__button">Обратный звонок</button>
             </div>
         </section>
-        <section class="section statistic">
+        <div class="section  statistic " >
             <div class="container">
                 <div class="stat">
                     <div class="stat__col">
@@ -63,12 +63,15 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section video">
+        </div>
+        <div class="section video" id="player">
+            <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/video.svg" alt="video" class="video__img">
-        </section>
+        </div>
         
     </main>
     
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
 </html>
