@@ -34,5 +34,11 @@ $(document).ready(function () {
         }
 
     };
+    var swiper = new Swiper('.swiper-cases', {
+        navigation: {
+          nextEl: '.swiper-button-next-cases',
+          prevEl: '.swiper-button-prev-cases',
+        },
+      });
     
 });

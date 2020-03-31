@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -143,10 +144,188 @@
                 </div>   
             </div>
         </section>
+        <section class="section price">
+            <div class="container">
+                <div class="price__content">
+                    <div class="price__col">
+                        <h3 class="price__title">Узнать стоимость</h3>
+                        <form action="#" class="form form__price">
+                            <div class="form__price__input">
+
+                                <label for="price-user-name" class="label form__label label--light price__label">Имя</label>
+                                <input type="text" name="userName" class="input form__input price__input " id="price-user-name" placeholder="Иван Иванов">
+                            </div>
+                            <div class="form__price__input">
+            
+                                <label for="price-user-Phone" class="label form__label label--light price__label">E-MAIL</label>
+                                <input type="email" name="userEmail" class="input form__input price__input " id="price-user-Phone" placeholder="ivanov@gmail.com"
+                                >
+                            </div>
+                            <div class="form__price__input">
+                                
+                                <label for="price-user-email" class="label form__label label--light price__label">Сообщение</label>
+                                <input type="text" name="userMasange" class="input form__input price__input" id="price-user-email" placeholder="Ведите Ваше сообщение">
+                            </div>
+                            
+                            <button class="button button--primary price__button">Узнать стоимость</button>
+                        </form>
+                    </div>
+                    <div class="price__img">
+                        <img src="img/form__img.png" alt="img" class="price__form__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section cases">
+            <div class="container">
+                <div class="title">
+                    <h3 class="title__big">Наши Кейсы</h3>
+                    <p class="title__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+                </div>
+                <div class="swiper-container swiper-cases">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <h3 class="cases__title">Ремонт телефонов</h3>
+                          <div class="cases__content">
+                            <div class="cases__col ">
+                                <div class="cases__col--img cases__col__bg"></div>
+                                <div class="cases__col__row">
+                                    <h3 class="cases__col__title">Результат за 4 месяца:</h3>
+                                    <ul class="cases__col__text">
+                                        <li class="cases__col__text--li">11 запросов у Яндекса, +10 у Google в топ-3</li>
+                                        <li class="cases__col__text--li">42 запросов у Яндекса, +55 у Google в топ-5</li>
+                                        <li class="cases__col__text--li">74 запросов у Яндекса, +119 у Google в топ-10</li>
+                                    </ul>
+                                </div>
+                                <div class="cases__col__row">
+                                    <h3 class="cases__col__title">Динамика улучшения видимости сайта:</h3>
+                                    <p class="cases__col__text">Посмотреть позиции до и после &gt;&gt;</p>
+                                </div>
+                                <div class="cases__col__row">
+                                    <h3 class="cases__col__title">Услуги:</h3>
+                                    <ul class="cases__col__text">
+                                        <li class="cases__col__text--li2">Технический SEO аудит</li>
+                                        <li class="cases__col__text--li2">Оптимизация сайта</li>
+                                        <li class="cases__col__text--li2">Юзабилити аудит</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cases__col">
+                                <p class="cases__col__text cases__col__text--sm">Статистика кол-ва переходов из поисковых систем<br><span class="cases__col__text--span">Источник: Яндекс Метрика</span></p>
+                                <img src="img/swip.png" alt="swip" class="cases__col__img">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                        <h3 class="cases__title">Ремонт телефонов</h3>
+                        <div class="cases__content">
+                          <div class="cases__col ">
+                            <div class="cases__col--img cases__col__bg"></div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Результат за 4 месяца:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li">11 запросов у Яндекса, +10 у Google в топ-3</li>
+                                      <li class="cases__col__text--li">42 запросов у Яндекса, +55 у Google в топ-5</li>
+                                      <li class="cases__col__text--li">74 запросов у Яндекса, +119 у Google в топ-10</li>
+                                  </ul>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Динамика улучшения видимости сайта:</h3>
+                                  <p class="cases__col__text">Посмотреть позиции до и после &gt;&gt;</p>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Услуги:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li2">Технический SEO аудит</li>
+                                      <li class="cases__col__text--li2">Оптимизация сайта</li>
+                                      <li class="cases__col__text--li2">Юзабилити аудит</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="cases__col">
+                              <p class="cases__col__text cases__col__text--sm">Статистика кол-ва переходов из поисковых систем<br><span class="cases__col__text--span">Источник: Яндекс Метрика</span></p>
+                              <img src="img/swip.png" alt="swip" class="cases__col__img">
+                          </div>
+                      </div>
+                        </div>
+                        <div class="swiper-slide">
+                        <h3 class="cases__title">Ремонт телефонов</h3>
+                        <div class="cases__content">
+                          <div class="cases__col ">
+                            <div class="cases__col--img cases__col__bg"></div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Результат за 4 месяца:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li">11 запросов у Яндекса, +10 у Google в топ-3</li>
+                                      <li class="cases__col__text--li">42 запросов у Яндекса, +55 у Google в топ-5</li>
+                                      <li class="cases__col__text--li">74 запросов у Яндекса, +119 у Google в топ-10</li>
+                                  </ul>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Динамика улучшения видимости сайта:</h3>
+                                  <p class="cases__col__text">Посмотреть позиции до и после &gt;&gt;</p>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Услуги:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li2">Технический SEO аудит</li>
+                                      <li class="cases__col__text--li2">Оптимизация сайта</li>
+                                      <li class="cases__col__text--li2">Юзабилити аудит</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="cases__col">
+                              <p class="cases__col__text cases__col__text--sm">Статистика кол-ва переходов из поисковых систем<br><span class="cases__col__text--span">Источник: Яндекс Метрика</span></p>
+                              <img src="img/swip.png" alt="swip" class="cases__col__img">
+                          </div>
+                      </div>
+                        </div>
+                        <div class="swiper-slide">
+                        <h3 class="cases__title">Ремонт телефонов</h3>
+                        <div class="cases__content">
+                          <div class="cases__col ">
+                            <div class="cases__col--img cases__col__bg"></div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Результат за 4 месяца:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li">11 запросов у Яндекса, +10 у Google в топ-3</li>
+                                      <li class="cases__col__text--li">42 запросов у Яндекса, +55 у Google в топ-5</li>
+                                      <li class="cases__col__text--li">74 запросов у Яндекса, +119 у Google в топ-10</li>
+                                  </ul>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Динамика улучшения видимости сайта:</h3>
+                                  <p class="cases__col__text">Посмотреть позиции до и после &gt;&gt;</p>
+                              </div>
+                              <div class="cases__col__row">
+                                  <h3 class="cases__col__title">Услуги:</h3>
+                                  <ul class="cases__col__text">
+                                      <li class="cases__col__text--li2">Технический SEO аудит</li>
+                                      <li class="cases__col__text--li2">Оптимизация сайта</li>
+                                      <li class="cases__col__text--li2">Юзабилити аудит</li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="cases__col">
+                              <p class="cases__col__text cases__col__text--sm">Статистика кол-ва переходов из поисковых систем<br><span class="cases__col__text--span">Источник: Яндекс Метрика</span></p>
+                              <img src="img/swip.png" alt="swip" class="cases__col__img">
+                          </div>
+                      </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    
+                </div>
+                    <div class="swiper-button-next swiper-button-next-cases"></div>
+                    <div class="swiper-button-prev swiper-button-prev-cases"></div>
+                
+            </div>
+        </section>
         
     </main>
     
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <script src="js/main.js"></script>
 </html>
