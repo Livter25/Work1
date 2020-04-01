@@ -1,0 +1,70 @@
+.news
+    height: 896px
+    width: 100%
+    position: relative
+    background-color: #eefdea
+    margin-top: 10%
+    padding-top: 1%
+    &__button
+        margin-top: 27px
+    &__text
+        width: 458px
+        height: 264px
+        background-color: $light
+        padding: 36px 52px 39px 40px
+        position: absolute
+        left: 50%
+        top: 56%
+        z-index: 20
+        box-shadow: 0px 0px 10.4px 2.6px rgba(34, 34, 34, 0.05)
+        border-radius: 5px
+        &__title
+            font-size: 1.22rem
+            font-weight: normal
+            margin-top: 0
+        &__text
+            font-size: 1rem
+            font-weight: 300
+    &__content
+        width: 65%
+    &__slide
+        position: relative
+        width: 820px
+        height: 460px
+        background: url(../img/news.png) no-repeat center 
+    &__number
+        width: 56px
+        height: 66px
+        border-radius: 5px
+        background-color: $primary
+        z-index: 200
+        color: $light
+        font-size: 1.22rem
+        margin-left: 2%
+        margin-top: 2%
+        &__content
+            padding-top: 10px
+            margin: auto
+            text-align: center
+            line-height: 0.9
+        &__text
+            font-weight: bold
+        &__mothe
+            font-size: 1rem
+            font-weight: 300
+.swiper-news
+  width: 820px
+.swiper-button-prev-news
+    background: url('../img/ar-next.svg') no-repeat center
+    left: 17%
+    top: 85%
+    width: 56px
+    &::after
+        display: none
+.swiper-button-next-news
+    background: url('../img/ar-prev.svg') no-repeat center
+    right: 75%
+    top: 85%
+    width: 56px
+    &::after
+        display: none

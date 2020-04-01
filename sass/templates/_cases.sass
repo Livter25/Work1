@@ -1,6 +1,12 @@
 .cases
     width: 100%
     position: relative
+    &__button
+        display: flex
+        justify-content: center
+        margin-top: 40px
+        width: 219px
+        height: 49px
     &__content
         width: 95%
         margin: auto
@@ -42,7 +48,8 @@
             &--li2
                 list-style-type: none
                 &::before
-                    content: '>'
+                    content: url('../img/ar.svg')
+                    margin-right: 10px
                     color: $text
             &--li
                 list-style-type: none

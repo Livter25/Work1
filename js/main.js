@@ -40,5 +40,17 @@ $(document).ready(function () {
           prevEl: '.swiper-button-prev-cases',
         },
       });
+    var swiper = new Swiper('.swiper-client', {
+        navigation: {
+          nextEl: '.swiper-button-next-client',
+          prevEl: '.swiper-button-prev-client',
+        },
+    });
+    var swiper = new Swiper('.swiper-news', {
+        navigation: {
+          nextEl: '.swiper-button-next-news',
+          prevEl: '.swiper-button-prev-news',
+        },
+    });
     
 });
