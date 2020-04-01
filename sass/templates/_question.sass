@@ -1,0 +1,74 @@
+.question
+    &__img
+        position: absolute
+        top: 90%
+        left: 45%
+    &__content
+        position: relative
+        display: flex
+        width: 100%
+    &__col
+        width: 50%
+        padding-top: 100px
+        padding-bottom: 100px
+        &__left
+            margin-left: 16%
+            width: 34%
+        &--primary
+            background: url('../img/bg__question.png') no-repeat center / cover
+        &__title
+            margin-top: 0
+        &__text
+            &__group
+                margin-top: 10px
+            &__span
+                font-weight: normal     
+        &__phone
+            text-decoration: none
+            color: $dark
+            &:hover
+                color: $primary
+                border-bottom: 1px solid $primary
+        &__content
+            width: 50%
+
+        &__two
+            display: flex
+            font-size: 1rem
+            font-weight: 300
+            &__title
+                margin-top: 0
+            &__text
+                line-height: 1.852
+            &__email
+                text-decoration: none
+                color: $dark
+                &:hover
+                    color: $primary
+                    border-bottom: 1px solid $primary 
+        &__one
+            font-size: 2.07rem
+            font-weight: normal
+            &__email
+                text-decoration: none
+                color: $primary
+                border-bottom: 1px solid $primary
+    &__form
+        width: 45%
+        padding-top: 20px
+        margin-left: 10%
+        &__input
+            display: flex
+            flex-direction: column
+    &__input
+        margin-bottom: 25px
+        color: $light
+    &__label
+        color: $light
+    &__button
+        margin-top: 35px
+        background: $light
+        color: $primary
+        &:hover
+            background: $primary
+            color: $light
