@@ -7,17 +7,21 @@
         position: relative
         display: flex
         width: 100%
+        height: 100%
+
     &__col
         width: 50%
-        padding-top: 100px
-        padding-bottom: 100px
         &__left
             margin-left: 16%
             width: 34%
         &--primary
             background: url('../img/bg__question.png') no-repeat center / cover
+            opacity: 0.9
+            padding-top: 4%
+            padding-bottom: 7%
+
         &__title
-            margin-top: 0
+            margin-top: 10%
         &__text
             &__group
                 margin-top: 10px
@@ -29,6 +33,7 @@
             &:hover
                 color: $primary
                 border-bottom: 1px solid $primary
+                
         &__content
             width: 50%
 
@@ -47,7 +52,7 @@
                     color: $primary
                     border-bottom: 1px solid $primary 
         &__one
-            font-size: 2.07rem
+            font-size: 1.77rem
             font-weight: normal
             &__email
                 text-decoration: none
@@ -55,7 +60,6 @@
                 border-bottom: 1px solid $primary
     &__form
         width: 45%
-        padding-top: 20px
         margin-left: 10%
         &__input
             display: flex
@@ -66,7 +70,7 @@
     &__label
         color: $light
     &__button
-        margin-top: 35px
+        margin-top: 5px
         background: $light
         color: $primary
         &:hover
