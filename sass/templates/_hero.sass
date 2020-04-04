@@ -3,6 +3,7 @@
     display: flex
     background: url('../img/hero/bg_p.png') no-repeat center 
     background-size: 100%
+    padding-bottom: 3%
     &__primary
         color: $primary
     &__content
@@ -34,19 +35,20 @@
         flex-direction: column
         align-items: center
         justify-content: flex-end
-        padding-bottom: 10%
         margin-left: -2%
         transition: all 0.5s
         &::before
             content: ''
+            top: 10%
             position: absolute
-            bottom: 75%
-            left: -75%
-            height: 2px
-            width: 461px
-            transform: rotate(90deg)
+            width: 4px
+            height: 65%
             background: $primary
+            margin-left: 10%
+       
 
         &__a
-            margin-bottom: 29px
+            margin-bottom: 20%
             margin-left: 20%
+            &__line 
+                    

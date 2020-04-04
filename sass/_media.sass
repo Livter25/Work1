@@ -1,6 +1,10 @@
 @media screen and (max-width:1775px)
     html
         font-size: 14px
+    .swiper-cases
+        width: 60%
+    .swiper-button-prev-news
+        left: 10%
 @media screen and (max-width:1200px)
     .hero
         margin-bottom: 5%
@@ -19,4 +23,197 @@
         right: 12%
         &__img 
             left: 40%
+
+@media screen and (max-width:1000px)
+    .box
+        display: block
+        left: 83.5%
+        &-link
+            display: flex
+            justify-content: center
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background-color: #fff
+            box-shadow: 1px 1px 10px rgba(0,0,0,.4)
+            .minibox, .minibox:before, .minibox:after
+                display: block
+                position: absolute
+                height: 2px
+                width: 18px
+                top: 50%
+                margin: auto
+
+                background-color: #000000
+            .minibox:before
+                content: ''
+                transition: all 0.2s
+                margin-top: -6px
+            .minibox:after
+                content: ''
+                transition: all 0.2s
+                margin-top: 4px
+            &_active .minibox
+                background-color: transparent
+                &:before
+                    transform: rotate(135deg) 
+                    margin-top: 0
+                &:after
+                    transform: rotate(-135deg) 
+                    margin-top: 0
+                
+    .boxing
+        position: fixed
+        display: block
+        right: -157vw
+        transition: all 0.5s
+        z-index: 95
+        width: 100%
+        height: 100%
+        &__active
+            right: -50%
+
         
+        &__menu
+            width: 50%
+            overflow: scroll
+            background-color: $light
+            display: flex
+            flex-direction: column
+            align-items: center
+            transition: all 1s
+
+            list-style: none
+            height: 100%
+            padding-top: 10%
+            padding-left: 0
+            margin: 0
+            &__block
+                margin: 10%
+                font-size: 2rem
+            
+            
+            &__style
+                text-align: center
+                padding: 20px 0
+                display: block
+                font-family: 'Yanone Kaffeesatz', sans-serif
+                font-size: 31px
+                text-decoration: none
+                color: $dark
+                width: 100%
+                transition: all 0.2s
+                &:hover
+                    width: 100%
+                    background-color: rgba($light, 0.6 )
+                    
+
+    .nav__item
+        font-size: 2rem
+    .menu
+        justify-content: center 
+    .question
+        &__col
+            &__title
+                font-size: 1.7rem 
+    .hero
+        &__content
+            padding-left: 5%
+        &__contact
+            display: none   
+    .nav
+        display: none
+
+@media screen and (max-width:778px)
+    .menu__content__button
+        display: none
+    .services
+        height: 100%
+        &__content
+            flex-direction: column
+        &__col
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: auto
+            margin-bottom: 5%
+            margin-right: 0
+            text-align: center
+    .price
+        background-size: 224%
+        &__col
+            width: 100%
+            padding: 5%
+        &__img 
+            display: none
+    .cases
+        &__col
+            &__img
+                display: none
+            &__text--sm
+                display: none
+    .news__number__content 
+        display: flex
+        flex-direction: column
+    .news__text 
+        width: 40%
+    .question
+        &__img
+            display: none
+        &__col__left 
+            width: 41%
+    .hero
+        background-size: 150%
+    .swiper-button-next-news 
+        right: 55%
+
+    .advantage
+        &__content
+            display: flex
+            flex-direction: column
+    .advantage__content__col
+        width: 100%
+    .advantage__content__text
+        width: 50%
+
+@media screen and (max-width:536px)
+    .menu
+        justify-content: space-around
+        &__content__phone 
+            display: none
+
+    .hero
+        background: url('../img/bg__hero.png') no-repeat center 
+        background-size: 54%
+        background-position: bottom
+        background-position-x: right
+    .swiper-cases 
+        width: 75%
+    .news__content
+        width: 100%
+
+    .client__col
+        display: none
+    .statistic 
+        display: none
+    .section
+        margin-bottom: 15%
+    .question__content
+        display: block
+    .question__col__left
+        width: 80%
+    .question__col--primary 
+        width: 100%
+    .footer
+        margin-top: -16%
+@media screen and (max-width:365px)
+    .video 
+        min-height: 300px
+    .price
+        display: none
+    .cases
+        display: none
+    .client
+        display: none
+    .news
+        display: none

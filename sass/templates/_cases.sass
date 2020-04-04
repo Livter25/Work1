@@ -16,7 +16,6 @@
         font-size: 1.37rem
         font-weight: normal
         color: $dark
-        margin-bottom: 48px
     &__col
         font-size: 1.08rem
         &__bg
@@ -26,11 +25,12 @@
             left: -26%
             position: absolute
             z-index: -1
-        &--img
-            background: url('../img/bg_cases.png') no-repeat center 
-            background-size: 48%
+        // &--img
+        //     background: url('../img/bg_cases.png') no-repeat center 
+        //     background-size: 48%
         &__img
             margin-bottom: 50px
+            width: 100%
         &__title
             color: $text
             font-weight: bold
@@ -56,9 +56,12 @@
                 &::before
                     content: '+'
 .swiper-cases
-  box-shadow: 0px 0px 10.4px 2.6px rgba(34, 34, 34, 0.05)
-  width: 79%
-  margin: auto
+    box-shadow: 0px 0px 10.4px 2.6px rgba(34, 34, 34, 0.05)
+    width: 75%
+    margin: auto
+    height: 100%
+    max-height: 506px
+    background: url('../img/bg_cases.png') no-repeat left 
 
 
    

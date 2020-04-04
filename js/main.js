@@ -58,6 +58,22 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+    $("#boxmenu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    var link = $('.box-link');
+    var menu = $('.boxing')
+
+
+    link.click(function (e) { 
+        e.preventDefault();
+        link.toggleClass('box-link_active');
+        menu.toggleClass('boxing__active')
+    
+    });
 
         
 });
