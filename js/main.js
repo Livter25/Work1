@@ -89,66 +89,50 @@ $(document).ready(function () {
     });
     //валидация формы 
   $('.modal__form').validate({
-    errorPlacement: function (error, element) {
-      if (element.attr("type") == "checkbox") {
-          return element.next('label').append(error);
-      }
-  
-       error.insertAfter($(element));
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          console.log('Ajax сработа. Ответ сревера'+response);
-          alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-          $(modal).toggleClass('modal--visible');
-          $(form)[0].reset();
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            console.log('Ajax сработа. Ответ сревера'+response);
+            alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
+            $(modal).toggleClass('modal--visible');
+            $(form)[0].reset();
+            
+          }
+        });
+      },
+      errorClass: "invalid__price",
+      errorElement: "em",
+      rules: {
+        // simple rule, converted to {required:true}
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15,
           
-        }
-      });
-    },
-    errorClass: "invalid",
-    errorElement: "em",
-    rules: {
-      // simple rule, converted to {required:true}
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15,
-        
-      },
-      userPhone: {
-        required: true,
-        minlength: 11,
-        
-        
-      },
-      userPhone: "required",
-      // compound rule
-      userEmail: {
-        required: true,
-        email: true
-      },
-      policycheckbox: "required",
-    },
-    messages: {
-      userName:{
-        required: "Имя обязательно ",
-        minlength: jQuery.validator.format("Имя не короче {0} букв "),
-        maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
-      } ,
-      userPhone:{
-        required: "Телефон обязательно",
-        minlength: jQuery.validator.format("Номер не короче {0} цифр "),
-      },
-      userEmail: {
-        required: "Обязателно укажите Email",
-        email: "Введите в формате sdfsd@asdasd.com"
         },
-      policycheckbox: "Согласие обязательно"
+        userPhone: {
+          required: true,
+          minlength: 11,
+          
+          
+        },
+        userPhone: "required",
+        
+        
+      },
+      messages: {
+        userName:{
+          required: "Имя обязательно ",
+          minlength: jQuery.validator.format("Имя не короче {0} букв "),
+          maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
+        } ,
+        userPhone:{
+          required: "Телефон обязательно",
+          minlength: jQuery.validator.format("Номер не короче {0} цифр "),
+        }
       }
 
   });
