@@ -493,10 +493,6 @@ body {
           align-items: center;
 }
 
-.menu__content__button {
-  margin-right: 5%;
-}
-
 .menu__content__phone {
   text-decoration: none;
   color: #38393b;
@@ -586,8 +582,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: url("../img/hero/bg_p.png") no-repeat center;
-  background-size: 100%;
-  padding-bottom: 3%;
+  background-size: 90%;
+  padding-bottom: 21%;
+  background-position: left;
 }
 
 .hero__primary {
@@ -606,7 +603,7 @@ body {
 }
 
 .hero__content__text {
-  width: 42%;
+  width: 39%;
   font-size: 1.2rem;
   font-weight: 300;
   color: #38393b;
@@ -614,7 +611,7 @@ body {
 }
 
 .hero__content__title {
-  margin-top: 30%;
+  margin-top: 20%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 3.1rem;
   font-weight: bold;
@@ -914,6 +911,10 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.invalid {
+  color: red;
 }
 
 .cases {
@@ -1307,19 +1308,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .question__input {
-  margin-bottom: 25px;
   color: #ffffff;
 }
 
 .question__label {
+  margin-top: 25px;
   color: #ffffff;
 }
 
 .question__button {
-  margin-top: 5px;
+  margin-top: 25px;
   background: #ffffff;
   color: #ff5a3c;
 }
@@ -1363,6 +1365,107 @@ body {
   margin-top: 8%;
 }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 199;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 57, 59, 0.6);
+}
+
+.modal__label {
+  margin-top: 25px;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__dialog {
+  position: relative;
+  padding: 2.36rem 3.5rem 1.928rem;
+  width: 36.14rem;
+  max-width: 29.14rem;
+  max-height: 32.062rem;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+.modal__title {
+  font-size: 1.357rem;
+  line-height: 26px;
+  text-align: center;
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  margin: 0;
+}
+
+.modal__title__input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/icon.svg") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__policy {
+  margin-bottom: 2.7rem;
+}
+
+.modal__button {
+  margin-top: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+input::-webkit-input-placeholder {
+  color: #38393b;
+}
+
+input::-moz-placeholder {
+  color: #38393b;
+}
+
 @media screen and (max-width: 1775px) {
   html {
     font-size: 14px;
@@ -1403,6 +1506,12 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .menu__content__phone {
+    display: none;
+  }
+  .menu__content__button {
+    margin-right: 5%;
+  }
   .box {
     display: block;
     left: 83.5%;
@@ -1469,7 +1578,7 @@ body {
     right: -50%;
   }
   .boxing__menu {
-    width: 50%;
+    width: 100%;
     overflow: scroll;
     background-color: #ffffff;
     display: -webkit-box;
@@ -1514,9 +1623,8 @@ body {
     font-size: 2rem;
   }
   .menu {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .question__col__title {
     font-size: 1.7rem;
@@ -1533,6 +1641,12 @@ body {
 }
 
 @media screen and (max-width: 778px) {
+  .boxing__menu {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .boxing__active {
+    right: 0;
+  }
   .menu__content__button {
     display: none;
   }

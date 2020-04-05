@@ -24,7 +24,7 @@
                         <a href="#question" class="nav__item">КОНТАКТЫ</a>
                     </nav>
                     <a href="tel:+78129921030" class="menu__content__phone">+7(812)-992-10-30</a>
-                    <button class="button menu__content__button button--primary" data-toggle="#">Заказать звонок</button>
+                    <button class="button menu__content__button button--primary" data-toggle="modal">Заказать звонок</button>
                     <div class="box">
                         <a class="box-link" href="#box">
                             <span class="minibox"></span>
@@ -53,7 +53,7 @@
             <div class="hero__content">
                 <h1 class="hero__content__title">Продвижение Сайтов <br><span class="hero__primary">в Санкт-Петербурге</span></h1>
                 <p class="hero__content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>
-                <button class="button hero__content__button">Обратный звонок</button>
+                <button class="button hero__content__button" data-toggle="modal">Обратный звонок</button>
             </div>
         </section>
         <div class="section  statistic " >
@@ -162,7 +162,7 @@
                 <div class="price__content">
                     <div class="price__col">
                         <h3 class="price__title">Узнать стоимость</h3>
-                        <form action="#" class="form form__price">
+                        <form action="send.php" method="POST" class="form form__price">
                             <div class="form__price__input">
 
                                 <label for="price-user-name" class="label form__label label--light price__label">Имя</label>
@@ -177,7 +177,7 @@
                             <div class="form__price__input">
             
                                 <label for="price-user-html" class="label form__label label--light price__label">АДРЕС ВЕБ-САЙТА</label>
-                                <input type="text" name="userHtml" class="input form__input price__input " id="price-user-Phone" placeholder="tatsianapavlenko.ru"
+                                <input type="text" name="UserWebsite" class="input form__input price__input " id="price-user-html" placeholder="tatsianapavlenko.ru" pattern="(http|https)://.+"
                                 >
                             </div>
                             <div class="form__price__input">
@@ -337,7 +337,7 @@
                 </div>
                 <div class="swiper-button-next swiper-button-next-cases"></div>
                 <div class="swiper-button-prev swiper-button-prev-cases"></div>
-                <button class="button button--primary cases__button">Портфолио</button>
+                <button class="button button--primary cases__button" data-toggle="modal">Портфолио</button>
                 
             </div>
         </section>
@@ -399,7 +399,7 @@
                 </div>
                 <div class="swiper-button-next swiper-button-next-client"></div>
                 <div class="swiper-button-prev swiper-button-prev-client"></div>
-                <button class="button button--primary client__button">Читать еще</button>
+                <button class="button button--primary client__button" data-toggle="modal">Читать еще</button>
                 
             </div>
         </section>
@@ -498,7 +498,7 @@
                     </div>
                     <img src="img/line.svg" alt="line" class="question__img">
                     <div class="question__col question__col--primary">
-                        <form action="#" class="form question__form">
+                        <form action="send.php" method="POST" class="form question__form">
                             <div class="question__form__input">
 
                                 <label for="question-user-name" class="label form__label label--light question__label">Имя</label>
@@ -542,11 +542,32 @@
             <p class="footer__text">Copyright © 2019. Все права защищены</p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__dialog">
+            <button class="modal__close"></button>
+            <form action="send.php" method="POST" class="form modal__form">
+                <div class="modal__title__input">
+
+                    <label for="modal-user-name" class="label form__label label--light modal__label">Имя</label>
+                    <input type="text" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Как вас зовут:">
+                </div>
+                <div class="modal__title__input">
+
+                    <label for="modal-user-Phone" class="label form__label label--light modal__label">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input modal__input " id="modal-user-Phone" placeholder="Ваш номер телефона:"
+                    minlength="12">
+                </div>
+                <button class="button button--primary modal__button" >Отправить</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script src="js/main.js"></script>
-
 </html>

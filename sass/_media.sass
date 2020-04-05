@@ -25,6 +25,11 @@
             left: 40%
 
 @media screen and (max-width:1000px)
+    .menu__content__phone
+        display: none
+    
+    .menu__content__button 
+        margin-right: 5%
     .box
         display: block
         left: 83.5%
@@ -75,7 +80,7 @@
 
         
         &__menu
-            width: 50%
+            width: 100%
             overflow: scroll
             background-color: $light
             display: flex
@@ -111,7 +116,7 @@
     .nav__item
         font-size: 2rem
     .menu
-        justify-content: center 
+        justify-content: space-around
     .question
         &__col
             &__title
@@ -125,6 +130,10 @@
         display: none
 
 @media screen and (max-width:778px)
+    .boxing__menu
+        background: rgba($light, 0.5)
+    .boxing__active 
+        right: 0
     .menu__content__button
         display: none
     .services
