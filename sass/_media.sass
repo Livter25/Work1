@@ -25,6 +25,21 @@
             left: 40%
 
 @media screen and (max-width:1000px)
+    .statistic
+        font-size: 1rem
+
+    .question__col__left 
+        margin-left: 10%
+        width: 45%
+    .price__img 
+        margin-left: 0
+    .price__content 
+        width: 100%
+    .services__col
+        margin-right: 15px
+        padding-right: 7px
+        padding-left: 7px
+        width: 23%
     .menu__content__phone
         display: none
     
@@ -80,7 +95,7 @@
 
         
         &__menu
-            width: 100%
+            width: 53%
             overflow: scroll
             background-color: $light
             display: flex
@@ -131,7 +146,8 @@
 
 @media screen and (max-width:778px)
     .boxing__menu
-        background: rgba($light, 0.5)
+        width: 100%
+        background: $light
     .boxing__active 
         right: 0
     .menu__content__button
@@ -149,7 +165,7 @@
             margin-right: 0
             text-align: center
     .price
-        background-size: 224%
+        background-size: 400%
         &__col
             width: 100%
             padding: 5%
@@ -186,6 +202,16 @@
         width: 50%
 
 @media screen and (max-width:536px)
+    .stat
+        height: 100%
+        padding: 5%
+        margin-left: -5%
+    .stat__col__number 
+        font-size: 2.42rem
+    .stat__col__text 
+        font-size: 1rem
+    .client__button
+        margin-top: 15px
     .menu
         justify-content: space-around
         &__content__phone 
@@ -194,7 +220,7 @@
     .hero
         background: url('../img/bg__hero.png') no-repeat center 
         background-size: 54%
-        background-position: bottom
+        background-position: center
         background-position-x: right
     .swiper-cases 
         width: 75%
@@ -202,17 +228,19 @@
         width: 100%
 
     .client__col
-        display: none
-    .statistic 
-        display: none
+        display: none 
+        
     .section
         margin-bottom: 15%
     .question__content
         display: block
     .question__col__left
         width: 80%
+        margin-bottom: 13%
     .question__col--primary 
         width: 100%
+    .question__form
+        margin: auto
     .footer
         margin-top: -16%
 @media screen and (max-width:365px)
@@ -226,3 +254,30 @@
         display: none
     .news
         display: none
+@media screen and (max-width:320px)
+    .question__col__left 
+        width: 90%
+    .advantage__content__text 
+        width: 100%
+    .boxing__menu 
+        padding-top: 23%
+    .footer__text::after 
+        margin-top: -8%
+    .question__form 
+        margin: auto
+        width: 65%
+    .question__col__title 
+        font-size: 1.4rem
+    .services
+        background: none
+    .statistic 
+        display: none
+    .hero
+        background: none
+    .hero__content__text
+        width: 100%
+    .hero__content__title
+        margin-top: 40%
+        font-size: 2rem
+    .title__big 
+        font-size: 1.8rem

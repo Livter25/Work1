@@ -169,7 +169,7 @@ $(document).ready(function () {
                 }
             });
         },
-        errorClass: "invalid",
+        errorClass: "invalid__price",
         errorElement: "em",
         rules: {
         // simple rule, converted to {required:true}
