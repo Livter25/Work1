@@ -1399,6 +1399,13 @@ em {
   height: 100%;
 }
 
+.modal__input {
+  border: 1px solid #939292;
+  border-radius: 10px;
+  color: #939292;
+  padding-left: 10px;
+}
+
 .modal__label {
   margin-top: 25px;
 }
@@ -1424,7 +1431,6 @@ em {
   font-size: 1.357rem;
   line-height: 26px;
   text-align: center;
-  font-family: 'Yeseva One', cursive;
   font-weight: normal;
   margin: 0;
 }
@@ -1473,11 +1479,11 @@ em {
 }
 
 input::-webkit-input-placeholder {
-  color: #38393b;
+  color: #939292;
 }
 
 input::-moz-placeholder {
-  color: #38393b;
+  color: #939292;
 }
 
 @media screen and (max-width: 1775px) {
@@ -1766,7 +1772,7 @@ input::-moz-placeholder {
   }
 }
 
-@media screen and (max-width: 536px) {
+@media screen and (max-width: 836px) {
   .stat {
     height: 100%;
     padding: 5%;

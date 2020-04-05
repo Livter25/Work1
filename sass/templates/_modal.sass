@@ -12,6 +12,11 @@
     right: 0
     width: 100%
     height: 100%
+    &__input
+        border: 1px solid $form
+        border-radius: 10px
+        color: $form
+        padding-left: 10px
     &__label
         margin-top: 25px
     &--visible
@@ -36,7 +41,6 @@
         font-size: 1.357rem
         line-height: 26px
         text-align: center
-        font-family: 'Yeseva One', cursive
         font-weight: normal
         margin: 0
     &__close
@@ -60,7 +64,7 @@
         align-self: flex-end
             
 input::-webkit-input-placeholder
-    color: $dark 
+    color: $form
 input::-moz-placeholder 
-     color: $dark
+     color: $form
     
