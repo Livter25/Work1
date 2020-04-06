@@ -827,6 +827,7 @@ body {
 }
 
 .services__text {
+  width: 100%;
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.6;
@@ -1484,10 +1485,6 @@ input::-webkit-input-placeholder {
 
 input::-moz-placeholder {
   color: #939292;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* IE10 IE11 */
 }
 
 @media screen and (max-width: 1775px) {
