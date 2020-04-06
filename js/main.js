@@ -89,6 +89,7 @@ $(document).ready(function () {
     });
     //валидация формы 
   $('.modal__form').validate({
+      
       errorClass: "invalid__price",
       errorElement: "em",
       rules: {
@@ -128,37 +129,37 @@ $(document).ready(function () {
         errorClass: "invalid__price",
         errorElement: "em",
         rules: {
-        // simple rule, converted to {required:true}
-        userName: {
-            required: true,
-            minlength: 2,
-            maxlength: 15,
-            
-        },
-        userMasange: "required",
-        UserWebsite: "required",
-        // compound rule
-        userEmail: {
-            required: true,
-            email: true
-        }
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15,
+                
+            },
+            userMasange: "required",
+            UserWebsite: "required",
+            // compound rule
+            userEmail: {
+                required: true,
+                email: true
+            }
         },
         messages: {
-        userName:{
-            required: "Имя обязательно ",
-            minlength: jQuery.validator.format("Имя не короче {0} букв "),
-            maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
-        } ,
-        userMasange:{
-            required: "Сообщение обязательно",
-        },
-        userEmail: {
-            required: "Обязателно укажите Email",
-            email: "Введите в формате sdfsd@asdasd.com"
+            userName:{
+                required: "Имя обязательно ",
+                minlength: jQuery.validator.format("Имя не короче {0} букв "),
+                maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
+            } ,
+            userMasange:{
+                required: "Сообщение обязательно",
             },
-        UserWebsite: {
-            required: "Обязателно укажите ваш сайт",
-            },
+            userEmail: {
+                required: "Обязателно укажите Email",
+                email: "Введите в формате sdfsd@asdasd.com"
+                },
+            UserWebsite: {
+                required: "Обязателно укажите ваш сайт",
+                },
         }
 
   });

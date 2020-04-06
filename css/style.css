@@ -1881,7 +1881,7 @@ input::-moz-placeholder {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
   .cases {
     display: none;
   }
