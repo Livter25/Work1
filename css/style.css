@@ -434,6 +434,7 @@ body {
 }
 
 .swiper-button-next {
+  outline: none;
   color: #6a6c6a;
   position: absolute;
   z-index: 10;
@@ -442,6 +443,7 @@ body {
 }
 
 .swiper-button-prev {
+  outline: none;
   color: #6a6c6a;
   position: absolute;
   z-index: 10;
@@ -1372,10 +1374,10 @@ em {
 .footer__text::after {
   content: '';
   height: 2px;
-  width: 100%;
+  width: 50%;
   background: #38393b;
   position: absolute;
-  left: 0;
+  left: 25%;
   margin-top: -2%;
 }
 
