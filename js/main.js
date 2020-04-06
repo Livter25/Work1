@@ -89,20 +89,6 @@ $(document).ready(function () {
     });
     //валидация формы 
   $('.modal__form').validate({
-      submitHandler: function(form) {
-        $.ajax({
-          type: "POST",
-          url: "send.php",
-          data: $(form).serialize(),
-          success: function (response) {
-            console.log('Ajax сработа. Ответ сревера'+response);
-            alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-            $(modal).toggleClass('modal--visible');
-            $(form)[0].reset();
-            
-          }
-        });
-      },
       errorClass: "invalid__price",
       errorElement: "em",
       rules: {
@@ -139,20 +125,6 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "Ваш номер телефона"});
 
   $('.form__price').validate({
-
-        submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "send.php",
-                data: $(form).serialize(),
-                success: function (response) {
-                console.log('Ajax сработа. Ответ сревера'+response);
-                alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-                $(form)[0].reset();
-                
-                }
-            });
-        },
         errorClass: "invalid__price",
         errorElement: "em",
         rules: {
@@ -192,19 +164,6 @@ $(document).ready(function () {
   });
   $('.question__form').validate({
 
-    submitHandler: function(form) {
-        $.ajax({
-            type: "POST",
-            url: "send.php",
-            data: $(form).serialize(),
-            success: function (response) {
-            console.log('Ajax сработа. Ответ сревера'+response);
-            alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-            $(form)[0].reset();
-            
-            }
-        });
-    },
     errorClass: "invalid",
     errorElement: "em",
     rules: {
