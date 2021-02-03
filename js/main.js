@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var link = $('.video__img');
-    var menu = $('.statistic')
+    var menu = $('.statistic');
 
 
     link.click(function (e) { 
@@ -65,13 +65,13 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1500);
     });
     var link = $('.box-link');
-    var menu = $('.boxing')
+    var meni = $('.boxing')
 
 
     link.click(function (e) { 
         e.preventDefault();
         link.toggleClass('box-link_active');
-        menu.toggleClass('boxing__active')
+        meni.toggleClass('boxing__active')
     
     });
     var modal = $('.modal'),
@@ -203,6 +203,19 @@ $(document).ready(function () {
     }
 
     });
+        jQuery(function($){
+            $('a[href*="#"]').on('click.smoothscroll', function( e ){
+            var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+            if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
+            var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
+            if( ! $target.length ) return;
+            e.preventDefault();
+            $('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 900, 'swing', function(){
+            window.location.hash = hash;
+            });
+            });
+        });
+
   
 
         
